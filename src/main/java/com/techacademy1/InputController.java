@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
         }
 
         @PostMapping("/output")
-        public String postForm(@RequestParam("val") String val, Model model) {
+        public String postOutput(@RequestParam("val") String val, Model model) {
             // フォームから送信されてきた値をModelに登録
             model.addAttribute("val", val);
             // confirm.htmlに画面遷移
