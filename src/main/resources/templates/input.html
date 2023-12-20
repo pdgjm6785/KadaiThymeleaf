@@ -10,7 +10,6 @@
     <p th:text="${inputPageDescription}">値を入力してください。</p>
 
     <form action="/output" method="post">
-        <label for="inputValue">値を入力：</label>
         <input type="text" id="inputValue" name="inputValue"/>
         <button type="submit">送信</button>
     </form>
@@ -18,3 +17,4 @@
     <p th:if="${previousValue}">前回入力された値は「<span th:text="${previousValue}"></span>」でした。</p>
 </body>
 </html>
+
